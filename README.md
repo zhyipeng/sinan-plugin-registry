@@ -15,4 +15,11 @@
 python3 scripts/check.py
 ```
 
-当前校验器只验证资料登记，明确拒绝非空 releases，防止在分发协议尚未实现时生成伪可安装记录。目录签名、索引发布、下载和宿主商店均未实现。未来扩展版本协议时需一并升级校验器。
+当前校验器验证资料登记及 submissions 待审核发布记录，仍拒绝非空 releases，防止在分发协议尚未实现时生成伪可安装记录。目录签名、索引发布、下载和宿主商店均未实现。未来扩展版本协议时需一并升级校验器。
+
+
+## 发布审核记录 v1
+
+模板工作流可向 `submissions/<plugin-id>/<version>.json` 提交 PR，字段包括 schemaVersion、pluginId、name、version、repository、tag、commit、releaseId、compatibility 和 assets。每个 asset 包含 os、arch、file、sha256、size、assetId、downloadUrl。校验器核对路径、版本、平台、摘要格式及 GitHub 下载地址的对应关系；不联网下载、不执行提交代码，不证明包无恶意行为。
+
+待审核记录不是可安装版本，不自动写入 plugins 的 releases，也不赋予官方身份。当前仍无宿主消费的商店索引或签名发布。目录维护者需核查仓库归属、真实 Release 与资产字节，以及宿主兼容性；将来安装索引协议确定后再人工或经审核的自动流程纳入。
