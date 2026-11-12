@@ -11,5 +11,6 @@
     "path": "plugins/json-tool"
   },
   "status": "pending-release",
-  "releases": []
+  "releases": [],
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOSIgZmlsbD0iI2VjZWZmZCIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzVkNjNiOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xNSAxMGgtMmEyIDIgMCAwIDAtMiAydjVsLTMgMyAzIDN2NWEyIDIgMCAwIDAgMiAyaDJNMjUgMTBoMmEyIDIgMCAwIDEgMiAydjVsMyAzLTMgM3Y1YTIgMiAwIDAgMS0yIDJoLTIiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjE1IiByPSIxIiBmaWxsPSIjNWQ2M2I4IiBzdHJva2U9Im5vbmUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSIjNWQ2M2I4IiBzdHJva2U9Im5vbmUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjI1IiByPSIxIiBmaWxsPSIjNWQ2M2I4IiBzdHJva2U9Im5vbmUiLz48L2c+PC9zdmc+Cg=="
 }

@@ -1,4 +1,5 @@
 """校验资料、已审核版本与待审核记录；不下载或执行插件。"""
+import base64
 import json
 import re
 from pathlib import Path
@@ -54,7 +55,12 @@ seen = set()
 installable = 0
 for path in sorted((root / "plugins").glob("*/plugin.json")):
     item = json.loads(path.read_text())
-    assert set(item) == {"schemaVersion", "id", "name", "summary", "publisher", "source", "status", "releases"}
+    assert set(item) - {"icon"} == {"schemaVersion", "id", "name", "summary", "publisher", "source", "status", "releases"}
+    if "icon" in item:
+        icon = item["icon"]
+        assert isinstance(icon, str) and len(icon) <= 128 * 1024
+        assert icon.startswith(("data:image/svg+xml;base64,", "data:image/png;base64,", "data:image/jpeg;base64,"))
+        assert len(base64.b64decode(icon.split(",", 1)[1], validate=True)) <= 64 * 1024
     assert item["schemaVersion"] == 1
     plugin_id(item["id"])
     assert item["id"] == path.parent.name and item["id"] not in seen
