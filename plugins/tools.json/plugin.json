@@ -10,7 +10,43 @@
     "repository": "https://github.com/zhyipeng/sinan-official-plugins",
     "path": "plugins/json-tool"
   },
-  "status": "pending-release",
-  "releases": [],
+  "status": "published",
+  "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.json",
+      "name": "JSON 工具",
+      "version": "0.4.1",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "v0.4.1",
+      "commit": "e10511dd1cc956c97f1d3ba8f8bf0de425c14772",
+      "releaseId": 442481292,
+      "minHostVersion": "0.1.0",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.json-0.4.1-darwin-arm64.zip",
+          "sha256": "46f759b328966ebb5928ddef47bf0ec6e893d0005597b762830e8b15becab6f0",
+          "size": 447176,
+          "assetId": 737992669,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/v0.4.1/tools.json-0.4.1-darwin-arm64.zip"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "file": "tools.json-0.4.1-darwin-amd64.zip",
+          "sha256": "46f759b328966ebb5928ddef47bf0ec6e893d0005597b762830e8b15becab6f0",
+          "size": 447176,
+          "assetId": 737992667,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/v0.4.1/tools.json-0.4.1-darwin-amd64.zip"
+        }
+      ]
+    }
+  ],
   "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOSIgZmlsbD0iI2VjZWZmZCIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzVkNjNiOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xNSAxMGgtMmEyIDIgMCAwIDAtMiAydjVsLTMgMyAzIDN2NWEyIDIgMCAwIDAgMiAyaDJNMjUgMTBoMmEyIDIgMCAwIDEgMiAydjVsMyAzLTMgM3Y1YTIgMiAwIDAgMS0yIDJoLTIiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjE1IiByPSIxIiBmaWxsPSIjNWQ2M2I4IiBzdHJva2U9Im5vbmUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSIjNWQ2M2I4IiBzdHJva2U9Im5vbmUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjI1IiByPSIxIiBmaWxsPSIjNWQ2M2I4IiBzdHJva2U9Im5vbmUiLz48L2c+PC9zdmc+Cg=="
 }
