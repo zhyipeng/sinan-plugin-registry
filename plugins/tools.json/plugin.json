@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "tools.json",
-  "name": "JSON 格式化",
-  "summary": "格式化、压缩 JSON，保留大整数并保存草稿。",
+  "name": "JSON 工具",
+  "summary": "纯前端 JSON 格式化、压缩工具，识别主输入框中的对象和数组并带入编辑器，保留数值精度。",
   "publisher": {
     "kind": "official"
   },
