@@ -7,7 +7,7 @@
     "kind": "official"
   },
   "source": {
-    "repository": null,
+    "repository": "https://github.com/zhyipeng/sinan-official-plugins",
     "path": "plugins/json-tool"
   },
   "status": "pending-release",
