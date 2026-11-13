@@ -16,6 +16,41 @@
       "schemaVersion": 1,
       "pluginId": "tools.json",
       "name": "JSON 工具",
+      "version": "0.4.2",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "v0.4.2",
+      "commit": "978cd326a7510022425690cf0c557e9186e69d5f",
+      "releaseId": 444020153,
+      "minHostVersion": "0.1.0",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.json-0.4.2-darwin-arm64.zip",
+          "sha256": "d5b9a4583b6a43e19dc5129c259c5dcebce807533c8e2bf5355663302b702df8",
+          "size": 448118,
+          "assetId": 742998457,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/v0.4.2/tools.json-0.4.2-darwin-arm64.zip"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "file": "tools.json-0.4.2-darwin-amd64.zip",
+          "sha256": "d5b9a4583b6a43e19dc5129c259c5dcebce807533c8e2bf5355663302b702df8",
+          "size": 448118,
+          "assetId": 742998458,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/v0.4.2/tools.json-0.4.2-darwin-amd64.zip"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.json",
+      "name": "JSON 工具",
       "version": "0.4.1",
       "repository": "zhyipeng/sinan-official-plugins",
       "tag": "v0.4.1",
