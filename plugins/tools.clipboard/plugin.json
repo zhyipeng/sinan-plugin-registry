@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "tools.clipboard",
+  "name": "剪贴板",
+  "summary": "文本与图片剪贴板历史，本机保存，支持搜索、预览和自动粘贴。默认 Command + Shift + V，可在设置中修改。需新版司南（源码 750cf22 或更新），早期 0.1.0 构建不兼容。",
+  "publisher": {
+    "kind": "official"
+  },
+  "source": {
+    "repository": "https://github.com/zhyipeng/sinan-official-plugins",
+    "path": "plugins/clipboard"
+  },
+  "status": "published",
+  "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.clipboard",
+      "name": "剪贴板",
+      "version": "0.1.0",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "v0.1.0",
+      "commit": "d07beeb4e9a34b0fb46360619fa454d8670bd6c7",
+      "releaseId": 445016287,
+      "minHostVersion": "0.1.0",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.clipboard-0.1.0-darwin-arm64.zip",
+          "sha256": "dc7379757543e5c7d2aefb6764950c94781feef5a34189ccb5ea598a77ca21b4",
+          "size": 2210865,
+          "assetId": 746303296,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/v0.1.0/tools.clipboard-0.1.0-darwin-arm64.zip"
+        }
+      ]
+    }
+  ],
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSIxMyIgeT0iMTIiIHdpZHRoPSIzOCIgaGVpZ2h0PSI0NyIgcng9IjgiIGZpbGw9IiM1NTc5YjgiLz48cmVjdCB4PSIyMyIgeT0iNSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE0IiByeD0iNSIgZmlsbD0iI2I2Y2FlOSIvPjxwYXRoIGQ9Ik0yMyAyOWgxOE0yMyAzOGgxOE0yMyA0N2gxMSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPgo="
+}
