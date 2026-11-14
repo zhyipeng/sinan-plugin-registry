@@ -13,5 +13,5 @@ Sinan 插件中心登记目录。负责维护插件资料、版本记录与审�
 
 ## 已登记插件
 
-- JSON 工具（`tools.json`）：纯前端 JSON 编辑工具。
-- 剪贴板（`tools.clipboard` 0.1.0）：文本/图片历史、本机持久化及自动粘贴，首版发布 macOS ARM64。需要包含插件热键与系统输入接口的新版司南（本体源码 750cf22 或更新）；宿主开发构建仍使用 0.1.0 版本号，早期同版本号构建不兼容，不能仅据最低版本号判断功能具备。
+- JSON 工具（`tools.json` 0.4.3）：纯前端 JSON 编辑工具，提供 macOS / Windows / Linux 的 ARM64 / AMD64 六目标包。
+- 剪贴板（`tools.clipboard` 0.1.1）：文本/图片历史、本机持久化及自动粘贴，提供 macOS / Windows / Linux 的 ARM64 / AMD64 六目标包；Linux X11 需要 xclip / xdotool，Wayland 需要 wl-clipboard 且只支持手动粘贴。需要包含插件热键与系统输入接口的新版司南（本体源码 750cf22 或更新）；宿主开发构建仍使用 0.1.0 版本号，早期同版本号构建不兼容，不能仅据最低版本号判断功能具备。
