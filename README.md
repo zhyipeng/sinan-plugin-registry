@@ -26,4 +26,4 @@ Sinan 插件中心登记目录。负责维护插件资料、版本记录与审�
 
 新增格式需先更新司南宿主：旧宿主可能拒绝包含新标签的整个目录并回退缓存。文件名、下载 URL 与标签绑定、真实 Release/Asset ID、大小及 SHA-256 校验保持不变。不得只为标签迁移重新登记已存在的同插件同版本。桌面宿主自身的发布标签不受影响。
 
-验证：`python3 scripts/check.py` 与 `python3 -m unittest discover -s scripts/tests`（Windows 可使用 `python`）。
+验证：`python3 scripts/check.py` 与 `python3 -m unittest discover -s scripts/tests`（Windows 使用 `python -X utf8`，测试命令对应为 `python -X utf8 -m unittest discover -s scripts/tests`）。
