@@ -54,7 +54,7 @@ def release(item, reviewed=False):
 seen = set()
 installable = 0
 for path in sorted((root / "plugins").glob("*/plugin.json")):
-    item = json.loads(path.read_text())
+    item = json.loads(path.read_text(encoding="utf-8"))
     assert set(item) - {"icon"} == {"schemaVersion", "id", "name", "summary", "publisher", "source", "status", "releases"}
     if "icon" in item:
         icon = item["icon"]
@@ -90,7 +90,7 @@ for path in sorted((root / "plugins").glob("*/plugin.json")):
 assert seen and len(seen) <= 128, "目录不能为空或超过 128 项"
 submissions = list((root / "submissions").glob("*/*.json"))
 for path in submissions:
-    item = json.loads(path.read_text())
+    item = json.loads(path.read_text(encoding="utf-8"))
     release(item)
     assert path.parent.name == item["pluginId"] and path.stem == item["version"]
 print(f"资料校验通过：{len(seen)} 个插件，{len(submissions)} 个待审核发布，{installable} 个可安装版本")

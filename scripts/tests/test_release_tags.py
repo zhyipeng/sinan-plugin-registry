@@ -13,7 +13,7 @@ spec.loader.exec_module(checker)
 
 class ReleaseTagsTest(unittest.TestCase):
     def record(self, plugin_id='tools.calendar'):
-        record = copy.deepcopy(json.loads((ROOT / 'plugins/tools.calendar/plugin.json').read_text())['releases'][0])
+        record = copy.deepcopy(json.loads((ROOT / 'plugins/tools.calendar/plugin.json').read_text(encoding="utf-8"))['releases'][0])
         record['pluginId'] = plugin_id
         record['tag'] = plugin_id + '-v' + record['version']
         for asset in record['assets']:
@@ -31,7 +31,7 @@ class ReleaseTagsTest(unittest.TestCase):
 
     def test_existing_legacy_records_remain_valid(self):
         for path in (ROOT / 'plugins').glob('*/plugin.json'):
-            for record in json.loads(path.read_text())['releases']:
+            for record in json.loads(path.read_text(encoding="utf-8"))['releases']:
                 checker.release(record, reviewed=True)
 
     def test_tag_must_bind_exact_plugin_and_version(self):
