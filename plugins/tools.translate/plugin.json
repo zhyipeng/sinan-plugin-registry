@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "tools.translate",
   "name": "翻译",
-  "summary": "支持 MyMemory、Google 免费网页接口及全局共享 LLM，可切换语言、引擎与命名配置，支持快捷复制。需新版司南（源码 d594882 或更新）；早期同为 0.1.0 的构建不兼容。提供六目标安装包，真实桌面交互未验收。",
+  "summary": "支持 MyMemory、Google 免费网页接口及全局共享 LLM，可切换语言、引擎与命名配置，支持快捷复制。需新版司南（源码 d594882 或更新）；早期同为 0.1.0 的构建不兼容。提供六目标安装包，真实桌面交互未验收。需支持插件独立发布标签的新版司南（源码 c518ca5 或更新）。",
   "publisher": {
     "kind": "official"
   },
@@ -12,6 +12,77 @@
   },
   "status": "published",
   "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.translate",
+      "name": "翻译",
+      "version": "0.3.1",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "tools.translate-v0.3.1",
+      "commit": "4745c16bfed51ebba55ebfdf17f55497c43370c5",
+      "releaseId": 446588946,
+      "minHostVersion": "0.1.0",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.translate-0.3.1-darwin-arm64.zip",
+          "sha256": "14758bb981a5c6d532545d21d1c467b061bb4f8c95cea0b111ba64eebbfcc0b8",
+          "size": 4888025,
+          "assetId": 753362100,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.translate-v0.3.1/tools.translate-0.3.1-darwin-arm64.zip"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "file": "tools.translate-0.3.1-darwin-amd64.zip",
+          "sha256": "aa47947a398b247d0671b2c4362fa48b324b984aa7a1baf983144c0ec90b5190",
+          "size": 5219320,
+          "assetId": 753362083,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.translate-v0.3.1/tools.translate-0.3.1-darwin-amd64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "file": "tools.translate-0.3.1-windows-arm64.zip",
+          "sha256": "08355fe4aaa01f944cdba6728a4c0e48caca27cd83d05b3149394a70b61b3c00",
+          "size": 4607893,
+          "assetId": 753362103,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.translate-v0.3.1/tools.translate-0.3.1-windows-arm64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "file": "tools.translate-0.3.1-windows-amd64.zip",
+          "sha256": "bf57740708d0c576695c76977e3c70146c118bb59471137f95d51a39e3ab128d",
+          "size": 5072671,
+          "assetId": 753362192,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.translate-v0.3.1/tools.translate-0.3.1-windows-amd64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "file": "tools.translate-0.3.1-linux-arm64.zip",
+          "sha256": "8d946d8ff007215f7ce5f1fd46745df4dde08d959e60033eb6e734cd0bfc6e4d",
+          "size": 4633518,
+          "assetId": 753362278,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.translate-v0.3.1/tools.translate-0.3.1-linux-arm64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "file": "tools.translate-0.3.1-linux-amd64.zip",
+          "sha256": "170d2c1a1828ac4d27c04833737edf16568a2221c85ddb7bd6e5a4c08f052203",
+          "size": 5070375,
+          "assetId": 753362341,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.translate-v0.3.1/tools.translate-0.3.1-linux-amd64.zip"
+        }
+      ]
+    },
     {
       "schemaVersion": 1,
       "pluginId": "tools.translate",
@@ -84,5 +155,5 @@
       ]
     }
   ],
-  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMyMzZkOWUiLz48ZyBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDIwaDI1TTI0IDE0djZNMTcgMjFjMiAxMCA5IDE2IDE4IDIwTTMyIDIxYy0zIDEwLTggMTYtMTkgMjFNMzYgNDhsOS0yNCA5IDI0TTM5IDQxaDEyIi8+PC9nPjwvc3ZnPgo="
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOSIgZmlsbD0iI2U5ZWZmZiIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMxNWVkOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik04IDEzaDE2bS04LTR2NG0tNSAxYzEgNyA2IDEyIDEyIDE1bS0zLTE1Yy0yIDctNiAxMi0xMiAxNU0yNCAzMWw1LTE0IDUgMTRtLTgtNWg2Ii8+PC9nPjwvc3ZnPgo="
 }

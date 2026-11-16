@@ -27,3 +27,12 @@ Sinan 插件中心登记目录。负责维护插件资料、版本记录与审�
 新增格式需先更新司南宿主：旧宿主可能拒绝包含新标签的整个目录并回退缓存。文件名、下载 URL 与标签绑定、真实 Release/Asset ID、大小及 SHA-256 校验保持不变。不得只为标签迁移重新登记已存在的同插件同版本。桌面宿主自身的发布标签不受影响。
 
 验证：`python3 scripts/check.py` 与 `python3 -m unittest discover -s scripts/tests`（Windows 使用 `python -X utf8`，测试命令对应为 `python -X utf8 -m unittest discover -s scripts/tests`）。
+
+
+## 统一图标更新与计算首次上架
+
+已登记 JSON 工具 0.4.4、剪贴板 0.1.2、翻译 0.3.1、日历 0.1.3，以及首次上架的计算 0.1.0。五个插件统一浅色圆角底板与蓝色线条图标，每个版本均对应真实的三系统 arm64/amd64 六目标发行资产；旧发行记录保留。
+
+计算支持主搜索即时计算、结果复制、多行稿纸和本地历史。Linux 复制依赖 X11 的 xclip 或 Wayland 的 wl-copy；缺少依赖时明确报错。[计算发行包](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.calculator-v0.1.0)。
+
+[三平台 CI](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/43799988731) 无界面测试与构建通过，30 个包的版本、图标、原生架构、大小与 SHA-256 已核验；真实桌面/WebView/剪贴板交互仍未验收。新发行标签需支持独立发布标签的宿主（源码 c518ca5 或更新），相同开发版本号 0.1.0 不构成兼容证明。

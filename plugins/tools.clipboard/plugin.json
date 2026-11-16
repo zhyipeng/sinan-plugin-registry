@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "tools.clipboard",
   "name": "剪贴板",
-  "summary": "跨平台文本与图片剪贴板历史，本机保存，支持搜索、预览和自动粘贴。默认 Command/Ctrl + Shift + V，可在设置中修改。需新版司南（源码 750cf22 或更新）；Linux Wayland 使用手动粘贴。",
+  "summary": "跨平台文本与图片剪贴板历史，本机保存，支持搜索、预览和自动粘贴。默认 Command/Ctrl + Shift + V，可在设置中修改。需新版司南（源码 750cf22 或更新）；Linux Wayland 使用手动粘贴。需支持插件独立发布标签的新版司南（源码 c518ca5 或更新）。",
   "publisher": {
     "kind": "official"
   },
@@ -12,6 +12,77 @@
   },
   "status": "published",
   "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.clipboard",
+      "name": "剪贴板",
+      "version": "0.1.2",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "tools.clipboard-v0.1.2",
+      "commit": "4745c16bfed51ebba55ebfdf17f55497c43370c5",
+      "releaseId": 446588889,
+      "minHostVersion": "0.1.0",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.clipboard-0.1.2-darwin-arm64.zip",
+          "sha256": "57c0820fc0b3155fafcf3086f62c41201d52120c9e10c0d83d9119430bf0d09f",
+          "size": 2225338,
+          "assetId": 753361726,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.1.2/tools.clipboard-0.1.2-darwin-arm64.zip"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "file": "tools.clipboard-0.1.2-darwin-amd64.zip",
+          "sha256": "0e33b3e01ab742c463514f7dc3e9837d954bb2d378b59e2d93e6ec90338dfe38",
+          "size": 2408485,
+          "assetId": 753361724,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.1.2/tools.clipboard-0.1.2-darwin-amd64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "file": "tools.clipboard-0.1.2-windows-arm64.zip",
+          "sha256": "155f0cec53e51c517028e552bb98f7daad0be4211ac968cd77218c5c0295ed3b",
+          "size": 2133101,
+          "assetId": 753361720,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.1.2/tools.clipboard-0.1.2-windows-arm64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "file": "tools.clipboard-0.1.2-windows-amd64.zip",
+          "sha256": "f5dc4f2e4c21768d099ca73133ebb6240e42212c8c049313a3be27d8a6f2eb51",
+          "size": 2341201,
+          "assetId": 753361792,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.1.2/tools.clipboard-0.1.2-windows-amd64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "file": "tools.clipboard-0.1.2-linux-arm64.zip",
+          "sha256": "c809d08dd65af61de65fea80df12ce364c861b41787d9c01f2715bfec9da7679",
+          "size": 2167685,
+          "assetId": 753361816,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.1.2/tools.clipboard-0.1.2-linux-arm64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "file": "tools.clipboard-0.1.2-linux-amd64.zip",
+          "sha256": "229ad3e5ca9c43e0be75af6994dea76a14c9390148fcb8388d1d4b9ec2a6a640",
+          "size": 2361641,
+          "assetId": 753361815,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.1.2/tools.clipboard-0.1.2-linux-amd64.zip"
+        }
+      ]
+    },
     {
       "schemaVersion": 1,
       "pluginId": "tools.clipboard",
@@ -110,5 +181,5 @@
       ]
     }
   ],
-  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSIxMyIgeT0iMTIiIHdpZHRoPSIzOCIgaGVpZ2h0PSI0NyIgcng9IjgiIGZpbGw9IiM1NTc5YjgiLz48cmVjdCB4PSIyMyIgeT0iNSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE0IiByeD0iNSIgZmlsbD0iI2I2Y2FlOSIvPjxwYXRoIGQ9Ik0yMyAyOWgxOE0yMyAzOGgxOE0yMyA0N2gxMSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPgo="
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOSIgZmlsbD0iI2U5ZWZmZiIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMxNWVkOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjExIiB5PSIxMSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjIyIiByeD0iMyIvPjxyZWN0IHg9IjE2IiB5PSI4IiB3aWR0aD0iOCIgaGVpZ2h0PSI2IiByeD0iMiIgZmlsbD0iI2U5ZWZmZiIvPjxwYXRoIGQ9Ik0xNiAyMGg4bS04IDVoOG0tOCA1aDUiLz48L2c+PC9zdmc+Cg=="
 }

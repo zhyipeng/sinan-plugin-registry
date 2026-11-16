@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "tools.calculator",
+  "name": "计算",
+  "summary": "主搜索即时计算与多行计算稿纸，支持结果复制、多页历史及本地自动保存。Linux 复制需 X11 的 xclip 或 Wayland 的 wl-copy。六目标安装包与三平台 CI 已核验，真实桌面与剪贴板交互未验收。需支持插件独立发布标签的新版司南（源码 c518ca5 或更新）。",
+  "publisher": {
+    "kind": "official"
+  },
+  "source": {
+    "repository": "https://github.com/zhyipeng/sinan-official-plugins",
+    "path": "plugins/calculator"
+  },
+  "status": "published",
+  "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.calculator",
+      "name": "计算",
+      "version": "0.1.0",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "tools.calculator-v0.1.0",
+      "commit": "4745c16bfed51ebba55ebfdf17f55497c43370c5",
+      "releaseId": 446589076,
+      "minHostVersion": "0.1.0",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.calculator-0.1.0-darwin-arm64.zip",
+          "sha256": "05ad591c3b66f65d53b058decf85da5851b4a9908cca1f61d84dd9b402796473",
+          "size": 2167941,
+          "assetId": 753362781,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.calculator-v0.1.0/tools.calculator-0.1.0-darwin-arm64.zip"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "file": "tools.calculator-0.1.0-darwin-amd64.zip",
+          "sha256": "b3082f1697acccf50f0bb0b807c555bdb8b66e8087c2b46beb9c8426f1b7ca2e",
+          "size": 2307164,
+          "assetId": 753362773,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.calculator-v0.1.0/tools.calculator-0.1.0-darwin-amd64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "file": "tools.calculator-0.1.0-windows-arm64.zip",
+          "sha256": "34b1b62bd4f9dc83f751b1aab443c42aeb83dfe5f0ba4fbaeaac01018ac35e6e",
+          "size": 1982482,
+          "assetId": 753362783,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.calculator-v0.1.0/tools.calculator-0.1.0-windows-arm64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "file": "tools.calculator-0.1.0-windows-amd64.zip",
+          "sha256": "477b25cb970be5c6b894472fcf00b8f321b753a382d891c35293f20dfe3ba8ca",
+          "size": 2166002,
+          "assetId": 753362819,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.calculator-v0.1.0/tools.calculator-0.1.0-windows-amd64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "file": "tools.calculator-0.1.0-linux-arm64.zip",
+          "sha256": "57674b8b21fb58986b929f2bdbcfc02311d4d4e0069f31117b10abf895c268be",
+          "size": 2128031,
+          "assetId": 753362842,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.calculator-v0.1.0/tools.calculator-0.1.0-linux-arm64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "file": "tools.calculator-0.1.0-linux-amd64.zip",
+          "sha256": "0b86c759f204ac9bf44db55f27afaf008dd387d9ec811cb8e7179e9c00ec93e7",
+          "size": 2312993,
+          "assetId": 753362861,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.calculator-v0.1.0/tools.calculator-0.1.0-linux-amd64.zip"
+        }
+      ]
+    }
+  ],
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOSIgZmlsbD0iI2U5ZWZmZiIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMxNWVkOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMSAxNGg4bS00LTR2OE0yNSAxNGg2TTEyIDI1bDYgNm0wLTYtNiA2TTI1IDI2aDZtLTYgNWg2Ii8+PC9nPjwvc3ZnPgo="
+}

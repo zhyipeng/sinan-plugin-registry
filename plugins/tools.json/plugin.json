@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "tools.json",
   "name": "JSON 工具",
-  "summary": "跨平台 JSON 格式化、压缩与表达式筛选，保留数值精度；可识别主输入框的 JSON 对象或数组并带入编辑器。支持 macOS、Windows、Linux。",
+  "summary": "跨平台 JSON 格式化、压缩与表达式筛选，保留数值精度；可识别主输入框的 JSON 对象或数组并带入编辑器。支持 macOS、Windows、Linux。需支持插件独立发布标签的新版司南（源码 c518ca5 或更新）。",
   "publisher": {
     "kind": "official"
   },
@@ -12,6 +12,77 @@
   },
   "status": "published",
   "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.json",
+      "name": "JSON 工具",
+      "version": "0.4.4",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "tools.json-v0.4.4",
+      "commit": "4745c16bfed51ebba55ebfdf17f55497c43370c5",
+      "releaseId": 446588555,
+      "minHostVersion": "0.1.0",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.json-0.4.4-darwin-arm64.zip",
+          "sha256": "65a7bc73ea96104d5c8e5e7d94a98fc2346f85d9670689f252d4779e95a59f92",
+          "size": 448174,
+          "assetId": 753360248,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.json-v0.4.4/tools.json-0.4.4-darwin-arm64.zip"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "file": "tools.json-0.4.4-darwin-amd64.zip",
+          "sha256": "65a7bc73ea96104d5c8e5e7d94a98fc2346f85d9670689f252d4779e95a59f92",
+          "size": 448174,
+          "assetId": 753360247,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.json-v0.4.4/tools.json-0.4.4-darwin-amd64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "file": "tools.json-0.4.4-windows-arm64.zip",
+          "sha256": "d8a42dccdfd72b64b1243136159593b0fe72cd593e431852c3bfac4f6fef8664",
+          "size": 448197,
+          "assetId": 753360262,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.json-v0.4.4/tools.json-0.4.4-windows-arm64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "file": "tools.json-0.4.4-windows-amd64.zip",
+          "sha256": "d8a42dccdfd72b64b1243136159593b0fe72cd593e431852c3bfac4f6fef8664",
+          "size": 448197,
+          "assetId": 753360283,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.json-v0.4.4/tools.json-0.4.4-windows-amd64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "file": "tools.json-0.4.4-linux-arm64.zip",
+          "sha256": "65a7bc73ea96104d5c8e5e7d94a98fc2346f85d9670689f252d4779e95a59f92",
+          "size": 448174,
+          "assetId": 753360288,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.json-v0.4.4/tools.json-0.4.4-linux-arm64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "file": "tools.json-0.4.4-linux-amd64.zip",
+          "sha256": "65a7bc73ea96104d5c8e5e7d94a98fc2346f85d9670689f252d4779e95a59f92",
+          "size": 448174,
+          "assetId": 753360319,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.json-v0.4.4/tools.json-0.4.4-linux-amd64.zip"
+        }
+      ]
+    },
     {
       "schemaVersion": 1,
       "pluginId": "tools.json",
@@ -154,5 +225,5 @@
       ]
     }
   ],
-  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOSIgZmlsbD0iI2VjZWZmZCIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzVkNjNiOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xNSAxMGgtMmEyIDIgMCAwIDAtMiAydjVsLTMgMyAzIDN2NWEyIDIgMCAwIDAgMiAyaDJNMjUgMTBoMmEyIDIgMCAwIDEgMiAydjVsMyAzLTMgM3Y1YTIgMiAwIDAgMS0yIDJoLTIiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjE1IiByPSIxIiBmaWxsPSIjNWQ2M2I4IiBzdHJva2U9Im5vbmUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSIjNWQ2M2I4IiBzdHJva2U9Im5vbmUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjI1IiByPSIxIiBmaWxsPSIjNWQ2M2I4IiBzdHJva2U9Im5vbmUiLz48L2c+PC9zdmc+Cg=="
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOSIgZmlsbD0iI2U5ZWZmZiIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMxNWVkOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xNSAxMGgtMmEyIDIgMCAwIDAtMiAydjVsLTMgMyAzIDN2NWEyIDIgMCAwIDAgMiAyaDJNMjUgMTBoMmEyIDIgMCAwIDEgMiAydjVsMyAzLTMgM3Y1YTIgMiAwIDAgMS0yIDJoLTIiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjE1IiByPSIxIiBmaWxsPSIjMzE1ZWQ4IiBzdHJva2U9Im5vbmUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSIjMzE1ZWQ4IiBzdHJva2U9Im5vbmUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjI1IiByPSIxIiBmaWxsPSIjMzE1ZWQ4IiBzdHJva2U9Im5vbmUiLz48L2c+PC9zdmc+Cg=="
 }
