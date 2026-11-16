@@ -1,7 +1,6 @@
 name: Registry metadata checks
+# commit/PR 自动检查已关闭以节省 Actions 用量；如需临时检查，可在 Actions 页手动触发。
 on:
-  push:
-  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
