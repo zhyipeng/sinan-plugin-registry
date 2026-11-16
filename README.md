@@ -19,3 +19,11 @@ Sinan 插件中心登记目录。负责维护插件资料、版本记录与审�
 - 翻译（`tools.translate` 0.3.0）：MyMemory、Google 免费网页接口和全局共享 LLM，支持命名配置选择与快捷复制，提供三平台 ARM64/AMD64 六目标包。需要包含共享 LLM 窄桥与 `llm` 权限的新宿主（[源码 d594882 或更新](https://github.com/zhyipeng/sinan/commit/d594882c5561f6e1f1b0d583efb1c1e34659b461)）；早期同为 0.1.0 的宿主不兼容。平台 CI 构建与无界面检查通过，真实桌面交互及真实 LLM 未验收。[发行包](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/v0.3.0)。
 
 - 日历（`tools.calendar` 0.1.2）：只读月历、农历、生肖、传统节日与二十四节气，中国大陆放假/补班数据覆盖 2004–2027 年，未收录年份明确提示。提供 macOS / Windows / Linux 的 ARM64 / AMD64 六目标包；需要三平台隔离 UI、桥 2 与图标能力（[宿主源码 0bf8cc9 或更新](https://github.com/zhyipeng/sinan/commit/0bf8cc9138bbfbd964cbd4bffb2a1da46f638adb)）。三平台 CI 测试与构建通过，实机 UI 未验收。[发行包](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/v0.1.2)。
+
+## 插件独立版本与标签
+
+同仓库内不同插件可使用相同的 `version`。新版本的 `tag` 使用 `<plugin-id>-v<version>`（例如 `tools.calendar-v0.1.0`），与该记录的 pluginId/version 精确对应；继续兼容历史 `v<version>`。版本唯一性仍按单个插件检查，既有标签、发行资产与登记记录不改写。
+
+新增格式需先更新司南宿主：旧宿主可能拒绝包含新标签的整个目录并回退缓存。文件名、下载 URL 与标签绑定、真实 Release/Asset ID、大小及 SHA-256 校验保持不变。不得只为标签迁移重新登记已存在的同插件同版本。桌面宿主自身的发布标签不受影响。
+
+验证：`python3 scripts/check.py` 与 `python3 -m unittest discover -s scripts/tests`（Windows 可使用 `python`）。

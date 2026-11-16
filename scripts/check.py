@@ -34,7 +34,7 @@ def release(item, reviewed=False):
         version(item["minHostVersion"])
     assert isinstance(item["name"], str) and 0 < len(item["name"].strip()) <= 64
     repository(item["repository"])
-    assert item["tag"] == "v" + item["version"] and re.fullmatch(r"[a-f0-9]{40}", item["commit"])
+    assert item["tag"] in ("v" + item["version"], item["pluginId"] + "-v" + item["version"]) and re.fullmatch(r"[a-f0-9]{40}", item["commit"])
     assert type(item["releaseId"]) is int and item["releaseId"] > 0
     assert item["compatibility"] in ({"apiVersion": "1", "uiBridgeVersion": "1"}, {"apiVersion": "1", "uiBridgeVersion": "2"})
     assert isinstance(item["assets"], list) and 0 < len(item["assets"]) <= 8
