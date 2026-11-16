@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "tools.calendar",
+  "name": "日历",
+  "summary": "只读月历，支持农历、生肖、传统节日、二十四节气及中国大陆放假/补班标记。假期数据覆盖 2004–2027 年，范围外明确提示未收录。提供六目标安装包，三平台 CI 通过，实机 UI 未验收。需包含三平台隔离 UI 的新版司南（源码 0bf8cc9 或更新），早期同为 0.1.0 的宿主不一定兼容。",
+  "publisher": {
+    "kind": "official"
+  },
+  "source": {
+    "repository": "https://github.com/zhyipeng/sinan-official-plugins",
+    "path": "plugins/calendar"
+  },
+  "status": "published",
+  "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.calendar",
+      "name": "日历",
+      "version": "0.1.2",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "v0.1.2",
+      "commit": "5aa6a6459a68265048706ba53f47eb3f00e17093",
+      "releaseId": 446538607,
+      "minHostVersion": "0.1.0",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.calendar-0.1.2-darwin-arm64.zip",
+          "sha256": "318bba801328ca9603d81371a2254936b9261b89c3999409ec0789ce9cff80d1",
+          "size": 111451,
+          "assetId": 753132678,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/v0.1.2/tools.calendar-0.1.2-darwin-arm64.zip"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "file": "tools.calendar-0.1.2-darwin-amd64.zip",
+          "sha256": "318bba801328ca9603d81371a2254936b9261b89c3999409ec0789ce9cff80d1",
+          "size": 111451,
+          "assetId": 753132677,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/v0.1.2/tools.calendar-0.1.2-darwin-amd64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "file": "tools.calendar-0.1.2-windows-arm64.zip",
+          "sha256": "318bba801328ca9603d81371a2254936b9261b89c3999409ec0789ce9cff80d1",
+          "size": 111451,
+          "assetId": 753132726,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/v0.1.2/tools.calendar-0.1.2-windows-arm64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "file": "tools.calendar-0.1.2-windows-amd64.zip",
+          "sha256": "318bba801328ca9603d81371a2254936b9261b89c3999409ec0789ce9cff80d1",
+          "size": 111451,
+          "assetId": 753132704,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/v0.1.2/tools.calendar-0.1.2-windows-amd64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "file": "tools.calendar-0.1.2-linux-arm64.zip",
+          "sha256": "318bba801328ca9603d81371a2254936b9261b89c3999409ec0789ce9cff80d1",
+          "size": 111451,
+          "assetId": 753132679,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/v0.1.2/tools.calendar-0.1.2-linux-arm64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "file": "tools.calendar-0.1.2-linux-amd64.zip",
+          "sha256": "318bba801328ca9603d81371a2254936b9261b89c3999409ec0789ce9cff80d1",
+          "size": 111451,
+          "assetId": 753132683,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/v0.1.2/tools.calendar-0.1.2-linux-amd64.zip"
+        }
+      ]
+    }
+  ],
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3QgeD0iNiIgeT0iMTAiIHdpZHRoPSI1MiIgaGVpZ2h0PSI0OCIgcng9IjEyIiBmaWxsPSIjNDQ3NWQ0Ii8+PHBhdGggZD0iTTYgMjhoNTJ2MThhMTIgMTIgMCAwIDEtMTIgMTJIMThBMTIgMTIgMCAwIDEgNiA0NloiIGZpbGw9IiNlZGYzZmYiLz48cGF0aCBkPSJNMjAgNnYxMk00NCA2djEyIiBzdHJva2U9IiNiOWNkZjQiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTIzIDM2aDlsLTcgMTVtMTUtMTV2MTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzQ0NzVkNCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4K"
+}
