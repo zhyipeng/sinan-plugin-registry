@@ -36,3 +36,9 @@ Sinan 插件中心登记目录。负责维护插件资料、版本记录与审�
 计算支持主搜索即时计算、结果复制、多行稿纸和本地历史。Linux 复制依赖 X11 的 xclip 或 Wayland 的 wl-copy；缺少依赖时明确报错。[计算发行包](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.calculator-v0.1.0)。
 
 [三平台 CI](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/43799988731) 无界面测试与构建通过，30 个包的版本、图标、原生架构、大小与 SHA-256 已核验；真实桌面/WebView/剪贴板交互仍未验收。新发行标签需支持独立发布标签的宿主（源码 c518ca5 或更新），相同开发版本号 0.1.0 不构成兼容证明。
+
+## 宿主共享剪贴板发行
+
+[剪贴板 0.2.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.clipboard-v0.2.0) 与[计算 0.2.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.calculator-v0.2.0) 已发布，系统剪贴板统一通过宿主 API 访问，最低宿主版本为 [Sinan v0.2.1](https://github.com/zhyipeng/sinan/releases/tag/v0.2.1)，初始化另检查 `clipboard.v1` 能力。
+
+[三平台 CI](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/43806605442) 无界面测试和构建通过，两个版本各六个目标包的清单、图标、原生架构、大小及 GitHub SHA-256 已核验；登记使用真实 Release/Asset ID，历史记录不变。三平台实机 UI、真实剪贴板、焦点及跨应用输入仍未验收。

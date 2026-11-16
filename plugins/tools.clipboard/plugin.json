@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "tools.clipboard",
   "name": "剪贴板",
-  "summary": "跨平台文本与图片剪贴板历史，本机保存，支持搜索、预览和自动粘贴。默认 Command/Ctrl + Shift + V，可在设置中修改。需新版司南（源码 750cf22 或更新）；Linux Wayland 使用手动粘贴。需支持插件独立发布标签的新版司南（源码 c518ca5 或更新）。",
+  "summary": "文本/图片剪贴板历史、本机持久化及自动粘贴。0.2.0 起通过宿主共享 API 读写，需司南 0.2.1 或更新版本。Linux X11 需 xclip / xdotool，Wayland 需 wl-clipboard 且只支持手动粘贴。三平台无界面 CI 与六目标发行包已核验，真实桌面交互未验收。",
   "publisher": {
     "kind": "official"
   },
@@ -12,6 +12,77 @@
   },
   "status": "published",
   "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.clipboard",
+      "name": "剪贴板",
+      "version": "0.2.0",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "tools.clipboard-v0.2.0",
+      "commit": "ff690a01a275a3e271faa71603bd4e29a412dc0b",
+      "releaseId": 446622744,
+      "minHostVersion": "0.2.1",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.clipboard-0.2.0-darwin-arm64.zip",
+          "sha256": "e6c414c35f20d7b8dbe95ccac63e09c791d73ce14a44ced4c9bd9233c954cc16",
+          "size": 2141289,
+          "assetId": 753514926,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.2.0/tools.clipboard-0.2.0-darwin-arm64.zip"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "file": "tools.clipboard-0.2.0-darwin-amd64.zip",
+          "sha256": "5a56446c2db3330a4b1f4cb40b861d13cdccbdd4ed8a3c021b5a4e210d010c92",
+          "size": 2278650,
+          "assetId": 753514927,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.2.0/tools.clipboard-0.2.0-darwin-amd64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "file": "tools.clipboard-0.2.0-windows-arm64.zip",
+          "sha256": "4fb15db0aae1150fbf9a6ffbc2c9e581e40c564ad230edce032e70b5a9593a8d",
+          "size": 2078063,
+          "assetId": 753514924,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.2.0/tools.clipboard-0.2.0-windows-arm64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "file": "tools.clipboard-0.2.0-windows-amd64.zip",
+          "sha256": "83304298d7c0f84201a2ba84419993a449b1b8e2a248282fe5849e809daa0098",
+          "size": 2276933,
+          "assetId": 753514979,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.2.0/tools.clipboard-0.2.0-windows-amd64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "file": "tools.clipboard-0.2.0-linux-arm64.zip",
+          "sha256": "1d78bc854ef49c8948222eab0bec75cdb0a5d09c14f1a7837c29ded5ed64bd0e",
+          "size": 2052174,
+          "assetId": 753514985,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.2.0/tools.clipboard-0.2.0-linux-arm64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "file": "tools.clipboard-0.2.0-linux-amd64.zip",
+          "sha256": "97709967559c26bff1ecfd9d5f1c86c65866299dac9a49f4e1a380dd0fd4cbf8",
+          "size": 2232150,
+          "assetId": 753514989,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.clipboard-v0.2.0/tools.clipboard-0.2.0-linux-amd64.zip"
+        }
+      ]
+    },
     {
       "schemaVersion": 1,
       "pluginId": "tools.clipboard",
