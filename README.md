@@ -42,3 +42,10 @@ Sinan 插件中心登记目录。负责维护插件资料、版本记录与审�
 [剪贴板 0.2.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.clipboard-v0.2.0) 与[计算 0.2.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.calculator-v0.2.0) 已发布，系统剪贴板统一通过宿主 API 访问，最低宿主版本为 [Sinan v0.2.1](https://github.com/zhyipeng/sinan/releases/tag/v0.2.1)，初始化另检查 `clipboard.v1` 能力。
 
 [三平台 CI](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/43806605442) 无界面测试和构建通过，两个版本各六个目标包的清单、图标、原生架构、大小及 GitHub SHA-256 已核验；登记使用真实 Release/Asset ID，历史记录不变。三平台实机 UI、真实剪贴板、焦点及跨应用输入仍未验收。
+
+
+## OCR 首次上架
+
+[文字识别 0.1.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.ocr-v0.1.0) 已公开，仅登记真实的 macOS arm64 完整包。支持离线中英文提取、主搜索粘图匹配与自动识别、原图预览、页面粘贴和结果复制；最低宿主为 [Sinan v0.3.1](https://github.com/zhyipeng/sinan/releases/tag/v0.3.1)，v0.2.1 不具备新图片接口，v0.3.0 未公开发行。
+
+[插件三平台 CI](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/43830703763) 和[宿主六目标流水线](https://github.com/zhyipeng/sinan/actions/runs/43831907925) 已通过。OCR ZIP 已回下载核对 SHA-256、大小、清单、模型摘要、原生架构、执行位、图标和许可，登记使用真实 Release/Asset ID。其他 OS/架构尚无完整 OCR 资产；真实桌面/WebView、系统剪贴板及权限交互未验收。

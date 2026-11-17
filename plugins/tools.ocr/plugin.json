@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "tools.ocr",
+  "name": "文字识别",
+  "summary": "离线提取截图和剪贴板图片中的中英文，支持主输入框图片匹配、带图自动识别、原图预览和可编辑结果，Cmd/Ctrl+V 粘图识别、Cmd/Ctrl+C 复制。最低司南 0.3.1，需确认原生插件信任；首发仅提供 macOS arm64 完整包，不需 Python 或在线服务。图片最多 4 MiB，结果可能有阅读顺序和标点错误。合成图及进程回收无界面验证通过，真实剪贴板与 WebView 交互未验收。",
+  "publisher": {
+    "kind": "official"
+  },
+  "source": {
+    "repository": "https://github.com/zhyipeng/sinan-official-plugins",
+    "path": "plugins/ocr"
+  },
+  "status": "published",
+  "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.ocr",
+      "name": "文字识别",
+      "version": "0.1.0",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "tools.ocr-v0.1.0",
+      "commit": "20ee8077ff9e77d76618723f465812f315e49704",
+      "releaseId": 446765683,
+      "minHostVersion": "0.3.1",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.ocr-0.1.0-darwin-arm64.zip",
+          "sha256": "82457315c39628673aecfa6c1ef676ba02e3c1259ee457da5aa8e5e180f33a0a",
+          "size": 29149980,
+          "assetId": 754044824,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.ocr-v0.1.0/tools.ocr-0.1.0-darwin-arm64.zip"
+        }
+      ]
+    }
+  ],
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOSIgZmlsbD0iI2U5ZWZmZiIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMxNWVkOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik05IDE1VjloNm0xMCAwaDZ2Nm0wIDEwdjZoLTZtLTEwIDBIOXYtNk0xNCAxNmgxMm0tNi0zdjE0bS02IDBoMTIiLz48L2c+PC9zdmc+Cg=="
+}
