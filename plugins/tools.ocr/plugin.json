@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "tools.ocr",
   "name": "文字识别",
-  "summary": "离线提取截图和剪贴板图片中的中英文，支持主输入框图片匹配、带图自动识别、原图预览和可编辑结果，Cmd/Ctrl+V 粘图识别、Cmd/Ctrl+C 复制。最低司南 0.3.1，需确认原生插件信任；首发仅提供 macOS arm64 完整包，不需 Python 或在线服务。图片最多 4 MiB，结果可能有阅读顺序和标点错误。合成图及进程回收无界面验证通过，真实剪贴板与 WebView 交互未验收。",
+  "summary": "离线提取图片中英文，支持主输入框图片匹配、带图自动识别、原图预览、粘图识别与结果复制。0.2.0 提供 macOS/Windows/Linux 的 ARM64/AMD64 六目标原生包，最低司南 0.3.1。Linux 基线为 Ubuntu 24.04/glibc 2.39，需系统 libstdc++；剪贴板需 X11/xclip 或 Wayland/wl-clipboard。Windows 包内附 UCRT 工具链运行库，不需 Python。六目标原生合成图、重复稳定性和进程回收验证通过；标点与阅读顺序可能有误，真实桌面/WebView 交互未验收。",
   "publisher": {
     "kind": "official"
   },
@@ -12,6 +12,77 @@
   },
   "status": "published",
   "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.ocr",
+      "name": "文字识别",
+      "version": "0.2.0",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "tools.ocr-v0.2.0",
+      "commit": "80eeb9c070c8cb48c3fa61a807ff35b89f975445",
+      "releaseId": 448036496,
+      "minHostVersion": "0.3.1",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.ocr-0.2.0-darwin-arm64.zip",
+          "sha256": "c1d9f69a4b10eef3fbb79a0984b1b6faa4acf34a03268a667ef1858ddfd907ba",
+          "size": 29138866,
+          "assetId": 757386395,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.ocr-v0.2.0/tools.ocr-0.2.0-darwin-arm64.zip"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "file": "tools.ocr-0.2.0-darwin-amd64.zip",
+          "sha256": "07ae45f0502565c10a67073e194231b40f12a25fe7574f10d7763a2ac66333c0",
+          "size": 29694946,
+          "assetId": 757386391,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.ocr-v0.2.0/tools.ocr-0.2.0-darwin-amd64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "file": "tools.ocr-0.2.0-windows-arm64.zip",
+          "sha256": "6ac8700e5e82da624d53fbfc125bd08a48b9887346fbbbb70ab2ffd286a3fdf6",
+          "size": 30229551,
+          "assetId": 757386396,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.ocr-v0.2.0/tools.ocr-0.2.0-windows-arm64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "file": "tools.ocr-0.2.0-windows-amd64.zip",
+          "sha256": "eca3ddc2bd13badf0a967f70c5a8b50f839661ff5fe16f43a2e5e7200d630af9",
+          "size": 30495426,
+          "assetId": 757386425,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.ocr-v0.2.0/tools.ocr-0.2.0-windows-amd64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "file": "tools.ocr-0.2.0-linux-arm64.zip",
+          "sha256": "b35fab13b7c941fac929c6f777f6d825519717e3687e77a909c68657b859ed35",
+          "size": 29460710,
+          "assetId": 757386485,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.ocr-v0.2.0/tools.ocr-0.2.0-linux-arm64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "file": "tools.ocr-0.2.0-linux-amd64.zip",
+          "sha256": "c5cb58731902a4d16df037f7368646852e03a78d8ed13ebe1a0b914b0c926c3e",
+          "size": 30336155,
+          "assetId": 757386508,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.ocr-v0.2.0/tools.ocr-0.2.0-linux-amd64.zip"
+        }
+      ]
+    },
     {
       "schemaVersion": 1,
       "pluginId": "tools.ocr",

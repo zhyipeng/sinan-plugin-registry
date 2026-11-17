@@ -55,3 +55,10 @@ Sinan 插件中心登记目录。负责维护插件资料、版本记录与审�
 [剪贴板 0.2.1](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.clipboard-v0.2.1) 已发布并登记三系统 arm64/amd64 六目标包，新增复制成功后自动前移与持久排序、列表图片缩略图及详情等比大图预览。最低宿主仍为 0.2.1，API 1 / UI Bridge 2 不变；历史发行记录保留。
 
 [发布流水线](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/44004573375) 在 macOS runner 上通过全量无界面测试、六目标交叉构建及打包；六个公开 ZIP 已回下载核对 SHA-256、大小、清单、图标、原生架构和执行位，使用真实 Release/Asset ID 登记。没有执行三平台实机 UI、真实系统剪贴板、焦点与自动输入验收。
+
+
+## OCR 六目标原生发行
+
+[文字识别 0.2.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.ocr-v0.2.0) 已登记 macOS、Windows、Linux 的 arm64/amd64 六个真实原生包，最低宿主仍为 0.3.1，保留 0.1.0 发行记录。Windows 含对应目标运行库，Linux 以 Ubuntu 24.04/glibc 2.39 与系统 libstdc++ 为基线；X11/xclip、Wayland/wl-clipboard 的宿主剪贴板依赖不变。
+
+[原生验证](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/44006353531) 在六个真实目标 runner 上完成实际 ZIP 中文/空格路径重定位、11 张合成图每图两次、源文本质量不退化、取消和父进程退出回收。[发布流程](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/44006913968) 仅解析通过验证的 ZIP，复核模型、架构、Windows 无控制台子系统和许可后公开，六个远端包的摘要与公开 SHA256SUMS 一致。ARM/x86 终端样本均可能漏一个点，位置不同，差异已公开在 VALIDATION.json；不把合成图验证当作完美准确率或真实桌面、WebView、输入法及系统剪贴板验收。
