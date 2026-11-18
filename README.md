@@ -74,3 +74,9 @@ Sinan 插件中心登记目录。负责维护插件资料、版本记录与审�
 [截图 0.3.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.screenshot-v0.3.0) 已登记 macOS 和 Windows 各两种架构，最低宿主为 Sinan 0.4.0。支持原生遮罩内框选、标注、输出和 OCR 交接。独立后处理入口已移除，Linux 不再由插件中心提供，已发行的旧版下载文件保留。
 
 四份公开 ZIP 已下载核对大小、SHA-256、清单、图标与原生二进制架构。Windows x64 无界面原生检查通过，ARM64 辅助程序已交叉构建。真实桌面交互待验收。
+
+## 脚本 0.2.0 上架
+
+[脚本 0.2.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.script-v0.2.0) 已登记 macOS、Windows、Linux 的 arm64/amd64 六个原生包，最低宿主为 [Sinan 0.6.0](https://github.com/zhyipeng/sinan/releases/tag/v0.6.0)。支持脚本目录扫描、自定义环境和关键字，以及输出页或后台结果通知。macOS 系统通知需要打包应用及系统授权，Linux 需会话 D-Bus 和通知服务。
+
+六个公开 ZIP 已回下载核对大小、SHA-256、清单、图标与原生架构，登记使用实际 Release 和 Asset ID。三平台真实系统通知和输出页交互仍待验收。

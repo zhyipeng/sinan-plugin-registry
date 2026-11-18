@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "tools.script",
+  "name": "脚本",
+  "summary": "集中管理脚本目录与解释器，支持自定义搜索关键字和全局搜索运行。可打开输出页或后台运行，短输出通过系统通知发送，长输出写入临时日志。最低宿主司南 0.6.0。",
+  "publisher": {
+    "kind": "official"
+  },
+  "source": {
+    "repository": "https://github.com/zhyipeng/sinan-official-plugins",
+    "path": "plugins/script"
+  },
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+CiAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOSIgZmlsbD0iI2U5ZWZmZiIvPgogIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMxNWVkOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgPHJlY3QgeD0iOCIgeT0iMTAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyMCIgcng9IjQiLz4KICAgIDxwYXRoIGQ9Im0xNCAxNiA0IDQtNCA0bTggMGg1Ii8+CiAgPC9nPgo8L3N2Zz4K",
+  "status": "published",
+  "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.script",
+      "name": "脚本",
+      "version": "0.2.0",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "tools.script-v0.2.0",
+      "commit": "9b38de77d9bda7cacaa094475fec330dd8133ccd",
+      "releaseId": 449773552,
+      "minHostVersion": "0.6.0",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.script-0.2.0-darwin-arm64.zip",
+          "sha256": "fa4c6ce6ca177a1fd68858d486c87f5cd09f758ddbbb5733188c8276ef0b45c5",
+          "size": 2177812,
+          "assetId": 762796868,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.script-v0.2.0/tools.script-0.2.0-darwin-arm64.zip"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "file": "tools.script-0.2.0-darwin-amd64.zip",
+          "sha256": "f8a696d3d8161bec1a8dd7eecf05a4e1b5c09633710bffa3d86f7fc6cdb86823",
+          "size": 2316367,
+          "assetId": 762796865,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.script-v0.2.0/tools.script-0.2.0-darwin-amd64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "file": "tools.script-0.2.0-windows-arm64.zip",
+          "sha256": "ada02458db02b28b36075eb19ed713b67f6f749d1024a37c8a3d70136ee12786",
+          "size": 2170394,
+          "assetId": 762796892,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.script-v0.2.0/tools.script-0.2.0-windows-arm64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "file": "tools.script-0.2.0-windows-amd64.zip",
+          "sha256": "27ff885fd5c1115b5d1c8a5c25e4cf09088997079ed01cb910ea80f8ee44bbbe",
+          "size": 2375638,
+          "assetId": 762796898,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.script-v0.2.0/tools.script-0.2.0-windows-amd64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "file": "tools.script-0.2.0-linux-arm64.zip",
+          "sha256": "43cdda2d28cbb6baec9fbf7d52409f6cbeeca3644f5153ffdc9d7c67f1392679",
+          "size": 2137460,
+          "assetId": 762796928,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.script-v0.2.0/tools.script-0.2.0-linux-arm64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "file": "tools.script-0.2.0-linux-amd64.zip",
+          "sha256": "b02fcdf5aa52b057f334cce32e1d443686c962908b4eea7b3e1bd45b209564d9",
+          "size": 2321397,
+          "assetId": 762796935,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.script-v0.2.0/tools.script-0.2.0-linux-amd64.zip"
+        }
+      ]
+    }
+  ]
+}
