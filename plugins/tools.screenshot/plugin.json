@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "tools.screenshot",
+  "name": "截图",
+  "summary": "区域截图与图片后处理：支持标注、裁剪、像素化、导入/粘贴图片、复制并关闭和原生 PNG 保存。0.1.0 提供六目标包，最低宿主司南 0.4.0；可选 OCR 0.3.0，在原窗口继续识别。macOS 需屏幕录制授权，Linux X11 需 scrot，Wayland 需 grim/slurp 与合成器支持，GNOME/KDE Portal 未接入。三端真实桌面、焦点、多屏与权限交互未验收。",
+  "publisher": {
+    "kind": "official"
+  },
+  "source": {
+    "repository": "https://github.com/zhyipeng/sinan-official-plugins",
+    "path": "plugins/screenshot"
+  },
+  "status": "published",
+  "releases": [
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.screenshot",
+      "name": "截图",
+      "version": "0.1.0",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "tools.screenshot-v0.1.0",
+      "commit": "567f0744a0c07afc0fd9a3bcb2a70ab6d307a461",
+      "releaseId": 448514451,
+      "minHostVersion": "0.4.0",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "file": "tools.screenshot-0.1.0-darwin-arm64.zip",
+          "sha256": "01b560b7f4b4214c4a8ce82002889d8b04ae1abd8a328741905d6bf8f68c8e4d",
+          "size": 2218596,
+          "assetId": 758720388,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.1.0/tools.screenshot-0.1.0-darwin-arm64.zip"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "file": "tools.screenshot-0.1.0-darwin-amd64.zip",
+          "sha256": "be1dfc0d4010ef7301b942d8692dd51dbd9bbf159ec57952a04595f578253adb",
+          "size": 2360832,
+          "assetId": 758720384,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.1.0/tools.screenshot-0.1.0-darwin-amd64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "file": "tools.screenshot-0.1.0-windows-arm64.zip",
+          "sha256": "faef3bc69a5a1da6e80120282f7cf4816cbdc4ce314f70231586b350a31f8bcb",
+          "size": 2214660,
+          "assetId": 758720417,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.1.0/tools.screenshot-0.1.0-windows-arm64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "file": "tools.screenshot-0.1.0-windows-amd64.zip",
+          "sha256": "cc7de3f0d2445a5e82db68122fc531336b793f49eae0d06841649ebffa219d53",
+          "size": 2424852,
+          "assetId": 758720439,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.1.0/tools.screenshot-0.1.0-windows-amd64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "file": "tools.screenshot-0.1.0-linux-arm64.zip",
+          "sha256": "546a7853022b8f0c7bd080a47eb7251376d3e2e335240f35f315fa6d296c3e72",
+          "size": 2185699,
+          "assetId": 758720445,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.1.0/tools.screenshot-0.1.0-linux-arm64.zip"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "file": "tools.screenshot-0.1.0-linux-amd64.zip",
+          "sha256": "0fd72b2a47967fa4be38a1678e751f5e7bcfa21210a82b1dc6024217bc1144d4",
+          "size": 2372217,
+          "assetId": 758720478,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.1.0/tools.screenshot-0.1.0-linux-amd64.zip"
+        }
+      ]
+    }
+  ],
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOSIgZmlsbD0iI2U5ZWZmZiIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMxNWVkOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik05IDE1VjloNm0xMCAwaDZ2Nm0wIDEwdjZoLTZtLTEwIDBIOXYtNiIvPjxyZWN0IHg9IjE0IiB5PSIxNCIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiByeD0iMiIvPjwvZz48L3N2Zz4K"
+}

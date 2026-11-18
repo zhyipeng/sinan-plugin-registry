@@ -62,3 +62,9 @@ Sinan 插件中心登记目录。负责维护插件资料、版本记录与审�
 [文字识别 0.2.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.ocr-v0.2.0) 已登记 macOS、Windows、Linux 的 arm64/amd64 六个真实原生包，最低宿主仍为 0.3.1，保留 0.1.0 发行记录。Windows 含对应目标运行库，Linux 以 Ubuntu 24.04/glibc 2.39 与系统 libstdc++ 为基线；X11/xclip、Wayland/wl-clipboard 的宿主剪贴板依赖不变。
 
 [原生验证](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/44006353531) 在六个真实目标 runner 上完成实际 ZIP 中文/空格路径重定位、11 张合成图每图两次、源文本质量不退化、取消和父进程退出回收。[发布流程](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/44006913968) 仅解析通过验证的 ZIP，复核模型、架构、Windows 无控制台子系统和许可后公开，六个远端包的摘要与公开 SHA256SUMS 一致。ARM/x86 终端样本均可能漏一个点，位置不同，差异已公开在 VALIDATION.json；不把合成图验证当作完美准确率或真实桌面、WebView、输入法及系统剪贴板验收。
+
+## 截图与 OCR 配套发行
+
+[截图 0.1.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.screenshot-v0.1.0) 首次上架，[OCR 0.3.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.ocr-v0.3.0) 新增跨插件公开图片入口，两者均为三系统 arm64/amd64 六目标原生包，最低宿主 [Sinan 0.4.0](https://github.com/zhyipeng/sinan/releases/tag/v0.4.0)。截图中的 OCR 为可选依赖，缺失时截图和标注照常使用；历史 OCR 0.2.0 及其兼容记录不变。
+
+[宿主六目标发布](https://github.com/zhyipeng/sinan/actions/runs/44070459519)、[截图发布](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/44070601312)、[OCR 六目标原生验证](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/44071389046)及[正式发布](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/44072351423)通过。登记逐项核对实际公开 Release/Asset ID、下载地址、版本、ZIP 原生入口/架构、大小和 SHA-256；旧资产保持不可变。真实桌面/WebView、截图授权、系统剪贴板、焦点与多屏交互尚未验收。
