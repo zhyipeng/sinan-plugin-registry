@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "tools.screenshot",
   "name": "截图",
-  "summary": "区域截图与图片后处理：支持标注、裁剪、像素化、导入/粘贴图片、复制并关闭和原生 PNG 保存。0.1.0 提供六目标包，最低宿主司南 0.4.0；可选 OCR 0.3.0，在原窗口继续识别。macOS 需屏幕录制授权，Linux X11 需 scrot，Wayland 需 grim/slurp 与合成器支持，GNOME/KDE Portal 未接入。三端真实桌面、焦点、多屏与权限交互未验收。",
+  "summary": "macOS 和 Windows 原生截图遮罩，支持整窗与元素吸附、标注、改色、复制、PNG 保存及可选 OCR。0.3.0 提供四目标包，最低宿主司南 0.4.0。macOS 需要屏幕录制授权。",
   "publisher": {
     "kind": "official"
   },
@@ -62,24 +62,59 @@
           "size": 2424852,
           "assetId": 758720439,
           "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.1.0/tools.screenshot-0.1.0-windows-amd64.zip"
-        },
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "pluginId": "tools.screenshot",
+      "name": "截图",
+      "version": "0.3.0",
+      "repository": "zhyipeng/sinan-official-plugins",
+      "tag": "tools.screenshot-v0.3.0",
+      "commit": "e031ca44adf6464cf6669bd9d399d617eaeebbbd",
+      "releaseId": 449717023,
+      "minHostVersion": "0.4.0",
+      "compatibility": {
+        "apiVersion": "1",
+        "uiBridgeVersion": "2"
+      },
+      "assets": [
         {
-          "os": "linux",
+          "os": "darwin",
           "arch": "arm64",
-          "file": "tools.screenshot-0.1.0-linux-arm64.zip",
-          "sha256": "546a7853022b8f0c7bd080a47eb7251376d3e2e335240f35f315fa6d296c3e72",
-          "size": 2185699,
-          "assetId": 758720445,
-          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.1.0/tools.screenshot-0.1.0-linux-arm64.zip"
+          "file": "tools.screenshot-0.3.0-darwin-arm64.zip",
+          "sha256": "873b04068b9c4a05097e2f7971147ea9b1ce3cbe623a9b2c84dae035a8490395",
+          "size": 2240964,
+          "assetId": 762625519,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.3.0/tools.screenshot-0.3.0-darwin-arm64.zip"
         },
         {
-          "os": "linux",
+          "os": "darwin",
           "arch": "amd64",
-          "file": "tools.screenshot-0.1.0-linux-amd64.zip",
-          "sha256": "0fd72b2a47967fa4be38a1678e751f5e7bcfa21210a82b1dc6024217bc1144d4",
-          "size": 2372217,
-          "assetId": 758720478,
-          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.1.0/tools.screenshot-0.1.0-linux-amd64.zip"
+          "file": "tools.screenshot-0.3.0-darwin-amd64.zip",
+          "sha256": "261e0b8a710fb998f5def3388bdb4742b9940c222ad482a1221fa17c1d716fd2",
+          "size": 2385335,
+          "assetId": 762625516,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.3.0/tools.screenshot-0.3.0-darwin-amd64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "file": "tools.screenshot-0.3.0-windows-arm64.zip",
+          "sha256": "c5d4b4b1892196a596d0c7df9585ac56ccf9be555e585a67b3d9b0f0e9742d66",
+          "size": 2543980,
+          "assetId": 762625552,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.3.0/tools.screenshot-0.3.0-windows-arm64.zip"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "file": "tools.screenshot-0.3.0-windows-amd64.zip",
+          "sha256": "3a004802d60c1dfcfec0824d3fbb27f1765312162efd4803812c58306a90c8d4",
+          "size": 2817914,
+          "assetId": 762625566,
+          "downloadUrl": "https://github.com/zhyipeng/sinan-official-plugins/releases/download/tools.screenshot-v0.3.0/tools.screenshot-0.3.0-windows-amd64.zip"
         }
       ]
     }

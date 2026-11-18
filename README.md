@@ -68,3 +68,9 @@ Sinan 插件中心登记目录。负责维护插件资料、版本记录与审�
 [截图 0.1.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.screenshot-v0.1.0) 首次上架，[OCR 0.3.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.ocr-v0.3.0) 新增跨插件公开图片入口，两者均为三系统 arm64/amd64 六目标原生包，最低宿主 [Sinan 0.4.0](https://github.com/zhyipeng/sinan/releases/tag/v0.4.0)。截图中的 OCR 为可选依赖，缺失时截图和标注照常使用；历史 OCR 0.2.0 及其兼容记录不变。
 
 [宿主六目标发布](https://github.com/zhyipeng/sinan/actions/runs/44070459519)、[截图发布](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/44070601312)、[OCR 六目标原生验证](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/44071389046)及[正式发布](https://github.com/zhyipeng/sinan-official-plugins/actions/runs/44072351423)通过。登记逐项核对实际公开 Release/Asset ID、下载地址、版本、ZIP 原生入口/架构、大小和 SHA-256；旧资产保持不可变。真实桌面/WebView、截图授权、系统剪贴板、焦点与多屏交互尚未验收。
+
+## 截图 0.3.0 上架
+
+[截图 0.3.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.screenshot-v0.3.0) 已登记 macOS 和 Windows 各两种架构，最低宿主为 Sinan 0.4.0。支持原生遮罩内框选、标注、输出和 OCR 交接。独立后处理入口已移除，Linux 不再由插件中心提供，已发行的旧版下载文件保留。
+
+四份公开 ZIP 已下载核对大小、SHA-256、清单、图标与原生二进制架构。Windows x64 无界面原生检查通过，ARM64 辅助程序已交叉构建。真实桌面交互待验收。
