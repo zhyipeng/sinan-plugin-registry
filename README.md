@@ -80,3 +80,9 @@ Sinan 插件中心登记目录。负责维护插件资料、版本记录与审�
 [脚本 0.2.0](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.script-v0.2.0) 已登记 macOS、Windows、Linux 的 arm64/amd64 六个原生包，最低宿主为 [Sinan 0.6.0](https://github.com/zhyipeng/sinan/releases/tag/v0.6.0)。支持脚本目录扫描、自定义环境和关键字，以及输出页或后台结果通知。macOS 系统通知需要打包应用及系统授权，Linux 需会话 D-Bus 和通知服务。
 
 六个公开 ZIP 已回下载核对大小、SHA-256、清单、图标与原生架构，登记使用实际 Release 和 Asset ID。三平台真实系统通知和输出页交互仍待验收。
+
+## 编码助手 0.1.1
+
+[编码助手 0.1.1](https://github.com/zhyipeng/sinan-official-plugins/releases/tag/tools.encoding-assistant-v0.1.1) 已登记 macOS、Windows、Linux 的 arm64/amd64 六个纯前端包，最低宿主为 [Sinan 0.4.0](https://github.com/zhyipeng/sinan/releases/tag/v0.4.0)。五个工具均在隔离页面离线处理；选图与剪贴板依赖宿主的 UI Bridge 2。
+
+六个公开 ZIP 已回下载核对大小、SHA-256、清单和图标，登记使用实际 Release 和 Asset ID。三端真实 WebView、剪贴板、选图与 Linux X11/Wayland 交互尚未验收。
